@@ -150,8 +150,8 @@ const ScrapbookPage = () => {
                 <div className="flex gap-4">
                   <select value={form.country} onChange={e => setForm(p => ({ ...p, country: e.target.value }))}
                     className="flex-1 px-4 py-3 rounded-xl bg-bgSecondary border border-borderColor text-textPrimary focus:border-sunset-500 focus:outline-none transition-all">
-                    <option value="">Select country (optional)</option>
-                    {countries.map(c => <option key={c.code} value={c.name}>{c.flag} {c.name}</option>)}
+                    <option value="" style={{ color: '#000000', backgroundColor: '#ffffff' }}>Select country (optional)</option>
+                    {countries.map(c => <option key={c.code} value={c.name} style={{ color: '#000000', backgroundColor: '#ffffff' }}>{c.flag} {c.name}</option>)}
                   </select>
 
                   <input type="file" multiple accept="image/*" onChange={handleFileChange}

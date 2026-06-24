@@ -9,12 +9,22 @@ const animals = ['🐯 Tiger', '🦁 Lion', '🐘 Elephant', '🐼 Panda', '🐺
 
 const destinations = [
   { name: 'Switzerland', flag: '🇨🇭' }, { name: 'Japan', flag: '🇯🇵' }, { name: 'Italy', flag: '🇮🇹' },
-  { name: 'France', flag: '🇫🇷' }, { name: 'India', flag: '🇮🇳' }, { name: 'Australia', flag: '🇦🇺' },
-  { name: 'Brazil', flag: '🇧🇷' }, { name: 'South Africa', flag: '🇿🇦' }, { name: 'Iceland', flag: '🇮🇸' },
-  { name: 'New Zealand', flag: '🇳🇿' }, { name: 'Greece', flag: '🇬🇷' }, { name: 'Norway', flag: '🇳🇴' },
-  { name: 'Egypt', flag: '🇪🇬' }, { name: 'Peru', flag: '🇵🇪' }, { name: 'Thailand', flag: '🇹🇭' },
-  { name: 'Kenya', flag: '🇰🇪' }, { name: 'Canada', flag: '🇨🇦' }, { name: 'Mexico', flag: '🇲🇽' },
-  { name: 'Nepal', flag: '🇳🇵' }, { name: 'Argentina', flag: '🇦🇷' },
+  { name: 'France', flag: '🇫🇷' }, { name: 'Maldives', flag: '🇲🇻' }, { name: 'Australia', flag: '🇦🇺' },
+  { name: 'New Zealand', flag: '🇳🇿' }, { name: 'Greece', flag: '🇬🇷' }, { name: 'Iceland', flag: '🇮🇸' },
+  { name: 'Norway', flag: '🇳🇴' }, { name: 'Canada', flag: '🇨🇦' }, { name: 'Spain', flag: '🇪🇸' },
+  { name: 'USA', flag: '🇺🇸' }, { name: 'Thailand', flag: '🇹🇭' }, { name: 'Indonesia', flag: '🇮🇩' },
+  { name: 'South Korea', flag: '🇰🇷' }, { name: 'Singapore', flag: '🇸🇬' }, { name: 'United Kingdom', flag: '🇬🇧' },
+  { name: 'Germany', flag: '🇩🇪' }, { name: 'Netherlands', flag: '🇳🇱' }, { name: 'Portugal', flag: '🇵🇹' },
+  { name: 'Croatia', flag: '🇭🇷' }, { name: 'Austria', flag: '🇦🇹' }, { name: 'Ireland', flag: '🇮🇪' },
+  { name: 'Sweden', flag: '🇸🇪' }, { name: 'Finland', flag: '🇫🇮' }, { name: 'Denmark', flag: '🇩🇰' },
+  { name: 'Brazil', flag: '🇧🇷' }, { name: 'Peru', flag: '🇵🇪' }, { name: 'Argentina', flag: '🇦🇷' },
+  { name: 'Colombia', flag: '🇨🇴' }, { name: 'Chile', flag: '🇨🇱' }, { name: 'Costa Rica', flag: '🇨🇷' },
+  { name: 'Mexico', flag: '🇲🇽' }, { name: 'South Africa', flag: '🇿🇦' }, { name: 'Kenya', flag: '🇰🇪' },
+  { name: 'Egypt', flag: '🇪🇬' }, { name: 'Morocco', flag: '🇲🇦' }, { name: 'Mauritius', flag: '🇲🇺' },
+  { name: 'Seychelles', flag: '🇸🇨' }, { name: 'Turkey', flag: '🇹🇷' }, { name: 'UAE', flag: '🇦🇪' },
+  { name: 'Vietnam', flag: '🇻🇳' }, { name: 'Philippines', flag: '🇵🇭' }, { name: 'India', flag: '🇮🇳' },
+  { name: 'Sri Lanka', flag: '🇱🇰' }, { name: 'Nepal', flag: '🇳🇵' }, { name: 'Bhutan', flag: '🇧🇹' },
+  { name: 'Fiji', flag: '🇫🇯' }, { name: 'French Polynesia', flag: '🇵🇫' }
 ];
 
 const steps = [
