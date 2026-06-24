@@ -17,7 +17,6 @@ const PassportPage = () => {
         backgroundColor: '#1a1a3e',
         scale: 2,
         useCORS: true,
-        allowTaint: true,
         ignoreElements: (element) => element.classList && element.classList.contains('ignore-canvas'),
         onclone: (document) => {
           const el = document.querySelector('.passport-card');
