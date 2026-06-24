@@ -22,13 +22,17 @@ connectDB();
 // Middleware
 app.use(cors({
   origin: function (origin, callback) {
+    if (!origin) return callback(null, true);
+
+    const clientUrl = process.env.CLIENT_URL ? process.env.CLIENT_URL.replace(/\/$/, '') : '';
     const allowedOrigins = [
-      process.env.CLIENT_URL,
+      clientUrl,
       'http://localhost:5173',
       'http://localhost:5174',
       'http://localhost:5175'
     ];
-    if (!origin || allowedOrigins.includes(origin)) {
+
+    if (allowedOrigins.includes(origin) || origin.endsWith('.vercel.app')) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
