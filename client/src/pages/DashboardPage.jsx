@@ -62,7 +62,7 @@ const DashboardPage = () => {
   return (
     <div className="min-h-screen bg-bgPrimary relative">
       {/* Hyperspeed Background */}
-      <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
+      <div className="absolute inset-0 -z-10 pointer-events-none opacity-40">
         <Hyperspeed effectOptions={hyperspeedOptions} />
       </div>
 
