@@ -16,6 +16,8 @@ const PassportPage = () => {
       const canvas = await html2canvas(passportRef.current, {
         backgroundColor: null,
         scale: 2,
+        useCORS: true,
+        allowTaint: true,
       });
       const link = document.createElement('a');
       link.download = `passport-${user?.passportId || 'explorer'}.png`;
