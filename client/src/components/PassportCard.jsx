@@ -31,7 +31,7 @@ const PassportCard = ({ user, passportRef }) => {
             const baseUrl = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : 'http://localhost:5000';
             const imgSrc = user?.profilePicture?.startsWith('/uploads') ? `${baseUrl}${user.profilePicture}` : (user?.profilePicture || '');
             return imgSrc ? (
-              <img src={imgSrc} alt={user?.name || 'Explorer'} className="w-24 h-32 sm:w-28 sm:h-36 object-cover rounded shadow-inner" />
+              <img src={imgSrc} alt={user?.name || 'Explorer'} className="w-24 h-32 sm:w-28 sm:h-36 object-cover rounded shadow-inner" crossOrigin="anonymous" />
             ) : (
               <div className="w-24 h-32 sm:w-28 sm:h-36 rounded bg-gradient-to-br from-ocean-500/20 to-sunset-500/20 flex items-center justify-center">
                 <span className="text-4xl">🧑‍🚀</span>

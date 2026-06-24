@@ -18,6 +18,7 @@ const PassportPage = () => {
         scale: 2,
         useCORS: true,
         allowTaint: true,
+        ignoreElements: (element) => element.classList && element.classList.contains('ignore-canvas'),
       });
       const link = document.createElement('a');
       link.download = `passport-${user?.passportId || 'explorer'}.png`;
@@ -31,7 +32,7 @@ const PassportPage = () => {
   return (
     <div className="min-h-screen bg-bgPrimary flex flex-col items-center justify-center p-4 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 ignore-canvas">
         <div className="absolute top-10 right-10 w-72 h-72 bg-passport-gold/5 rounded-full blur-[100px]" />
         <div className="absolute bottom-10 left-10 w-72 h-72 bg-ocean-600/10 rounded-full blur-[100px]" />
       </div>
