@@ -14,11 +14,15 @@ const PassportPage = () => {
     try {
       const html2canvas = (await import('html2canvas')).default;
       const canvas = await html2canvas(passportRef.current, {
-        backgroundColor: null,
+        backgroundColor: '#1a1a3e',
         scale: 2,
         useCORS: true,
         allowTaint: true,
         ignoreElements: (element) => element.classList && element.classList.contains('ignore-canvas'),
+        onclone: (document) => {
+          const el = document.querySelector('.passport-card');
+          if (el) el.style.boxShadow = 'none';
+        }
       });
       const link = document.createElement('a');
       link.download = `passport-${user?.passportId || 'explorer'}.png`;
